@@ -1,0 +1,44 @@
+$col-max-width: 100% / 12;
+
+* {
+  box-sizing: border-box;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    flex-basis: $col-max-width * $i;
+    max-width: $col-max-width * $i;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      max-width: 50%;
+      flex-basis: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      max-width: 100%;
+      flex-basis: 100%;
+    }
+  }
+}

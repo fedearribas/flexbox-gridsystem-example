@@ -1,60 +1,26 @@
+<head>
+  <link href="styles.css" rel="stylesheet">
+</head>
+
 <div class="row">
-    <div class="col col-3"><label for="">Name</label><input type="text"></div>
-    <div class="col col-3"><label for="">Email</label><input type="text"></div>
-    <div class="col col-6"><label for="">Address</label><input type="text"></div>
-    <div class="col col-8"><label for="">Phone</label><input type="text"></div>
+  <div class="col-3">
+    <label for="">Name</label>
+    <input class="full-width" type="text">
+  </div>
+  <div class="col-3">
+    <label for="">Email</label>
+    <input class="full-width" type="text">
+  </div>
+  <div class="col-6">
+    <label for="">Address</label>
+    <input class="full-width" type="text">
+  </div>
+  <div class="col-8">
+    <label for="">Phone</label>
+    <input class="full-width" type="text">
+  </div>
+  <div class="col-12">
+    <label for="">Phone</label>
+    <input class="full-width" type="text">
+  </div>
 <div>
-    
-<style>
-
-  *{ box-sizing: border-box; }
-
-  input {
-    width: 100%;
-  }
-
-  .row { 
-    display: flex;
-    flex-flow: row wrap;
-  }
-  
-  .col {
-    flex-grow: 1;
-    flex-shrink: 0;
-    padding-bottom: 1rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
-  .col-1{ flex-basis: 8.33%; max-width: 8.33%; }
-  .col-2{ flex-basis: 16.66%; max-width: 16.66%; }
-  .col-3{ flex-basis: 25%; max-width: 25%; }
-  .col-4{ flex-basis: 33.33%; max-width: 33.33%; }
-  .col-5{ flex-basis: 41.66%; max-width: 41.66%; }
-  .col-6{ flex-basis: 50%; max-width: 50%; }
-  .col-7{ flex-basis: 58.33%; max-width: 58.33%; }
-  .col-8{ flex-basis: 66.66%; max-width: 66.66%; }
-  .col-9{ flex-basis: 75%; max-width: 75%; }
-  .col-10{ flex-basis: 83.33%; max-width: 83.33%; }
-  .col-11{ flex-basis: 91.66%; max-width: 91.66%; }
-  .col-12{ flex-basis: 100%; max-width: 100%; }
-
-@media only screen and (max-width: 960px) {
-  .col-1, .col-2, .col-3, .col-4, 
-  .col-5, .col-6, .col-7,.col-8,
-  .col-9,.col-10,.col-11, .col-12 {
-     max-width: 50%;
-     flex-basis: 50%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .col-1, .col-2, .col-3, .col-4, 
-  .col-5, .col-6, .col-7,.col-8,
-  .col-9,.col-10,.col-11, .col-12 {
-    max-width: 100%;
-    flex-basis: 100%;
-  }
-}
-  
-</style>
